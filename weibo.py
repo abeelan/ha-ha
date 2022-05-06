@@ -148,7 +148,7 @@ class WeiBo:
             [<Element>, ...]
         """
         r = self.session.get(self.url_follow, params={"page": page})
-        logger.info(r.url)
+        # logger.info(r.url)
         html = r.html
 
         # 获取总页数
